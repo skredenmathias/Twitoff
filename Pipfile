@@ -12,6 +12,7 @@ flask-sqlalchemy = "*"
 tweepy = "*"
 python-dotenv = "*"
 python-decouple = "*"
+flask-debug = "*"
 
 [requires]
 python_version = "3.7"

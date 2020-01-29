@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TwitOff App</title>
+<head>
+    <title>TwitOff - {{ title }}</title>
     <link rel="stylesheet" href="https://unpkg.com/picnic"/>
-  </head>
-  <body>
-    <h1>Welcome to {{title}}!!</h1>
-      <ul>
-        <h2>Users</h2>
-        {% for user in users %}
-        <li> {{ user.username }}</li>
-        {% endfor %}
-      </ul>
-  </body>
+</head>
+<body>
+
+{% block content %}
+<h1> Twitoff! </h1>
+    <form action="/user" method="post">
+    <input type="text" name="username" placeholder="User to add">
+    <input type="submit" value="Add User">
+    </form>
+
+    <select>
+      <option value="User1">Select an option</option>
+      <option>Good option</option>
+      <option>Nice option</option>
+      <option>Cheap option</option>
+    </select>
+{% endblock %}
+
+</body>
 </html>
