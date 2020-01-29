@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitOff App</title>
+    <link rel="stylesheet" href="https://unpkg.com/picnic"/>
+  </head>
+  <body>
+    <h1>Welcome to {{title}}!!</h1>
+      <ul>
+        <h2>Users</h2>
+        {% for user in users %}
+        <li> {{ user.username }}</li>
+        {% endfor %}
+      </ul>
+  </body>
+</html>
