@@ -16,6 +16,8 @@ flask-debug = "*"
 heroku = "*"
 gunicorn = "*"
 psycopg2 = "*"
+numpy = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.7"
