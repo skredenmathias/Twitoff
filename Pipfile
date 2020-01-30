@@ -13,6 +13,9 @@ tweepy = "*"
 python-dotenv = "*"
 python-decouple = "*"
 flask-debug = "*"
+heroku = "*"
+gunicorn = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.7"
